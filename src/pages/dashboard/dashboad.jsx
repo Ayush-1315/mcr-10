@@ -12,7 +12,6 @@ export const Dashboard = () => {
     },
     { total: 0, totalDelivered: 0, lowStock: 0 }
   );
-  console.log(stockDetails)
   return <div className={css.dashboard}>
     <div className={css.total}>
         <h2>{stockDetails?.total}</h2>

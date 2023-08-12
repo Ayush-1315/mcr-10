@@ -5,7 +5,6 @@ export const DataProvider=({children})=>{
     const [dataState,dataDispatch]=useReducer(dataReducer,initialData);
     const addData=(data)=>{
         const newProduct={id:dataState?.allProducts[dataState?.allProducts.length-1].id+1,...data};
-        console.log(newProduct)
         dataDispatch({type:"ADD_DATA",payload:newProduct})
     }
     useEffect(()=>{
