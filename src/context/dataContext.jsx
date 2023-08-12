@@ -17,7 +17,6 @@ export const DataProvider=({children})=>{
         localStorage.setItem("inventory",JSON.stringify(dataState?.allProducts));
      }
     },[dataState]);
-    console.log(JSON.parse(localStorage.getItem("inventory")))
     return <DataContext.Provider value={{dataState,dataDispatch,addData}}>
         {children}
     </DataContext.Provider>

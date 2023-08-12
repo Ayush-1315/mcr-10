@@ -9,7 +9,6 @@ export const Sidebar=()=>{
         dataDispatch({type:"SET_DEPT",payload:"all"});
     }
     const currPath=useLocation().pathname;
-    console.log(currPath);
     return <div className={css.sidebarContainer}>
         <ul>
             <li className={currPath==="/"?css.selected:css.tab}><Link to="/">Dashboard</Link></li>
