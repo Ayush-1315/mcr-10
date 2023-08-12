@@ -6,6 +6,8 @@ gap:1rem;
 .total,.delivered,.low{
     height: fit-content;
     width: 15rem;
+    border-radius: 1rem;
+    border:2px solid grey;
 }
 .total p,.delivered p,.low p{
     font-weight: bolder;

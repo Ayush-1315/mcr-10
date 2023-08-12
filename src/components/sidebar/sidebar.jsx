@@ -12,9 +12,9 @@ export const Sidebar=()=>{
     console.log(currPath);
     return <div className={css.sidebarContainer}>
         <ul>
-            <li><Link to="/">Dashboard</Link></li>
-            <li><Link to="/department">Departments</Link></li>
-            <li onClick={()=>navigatePage()}>Products</li>
+            <li className={currPath==="/"?css.selected:css.tab}><Link to="/">Dashboard</Link></li>
+            <li className={currPath==="/department"?css.selected:css.tab}><Link to="/department">Departments</Link></li>
+            <li onClick={()=>navigatePage()} className={currPath==="/products"?css.selected:css.tab}>Products</li>
         </ul>
     </div>
 }

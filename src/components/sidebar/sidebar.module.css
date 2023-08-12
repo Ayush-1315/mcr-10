@@ -13,11 +13,12 @@
     flex-direction: column;
     justify-content: space-around;
 }
-.sidebarContainer li{
+.tab{
     cursor: pointer;
     color: #3D3F3E;
 }
 .selected{
+    cursor: pointer;
     color:#ffffff;
 }
 .sidebarContainer a{
