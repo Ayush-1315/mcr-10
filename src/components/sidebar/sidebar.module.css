@@ -1,0 +1,26 @@
+.sidebarContainer{
+    background-color: rgb(33,33,37);
+    /* color:#ffffff; */
+    width: 15vw;
+    min-height: 100vh;
+    padding-top:5%;
+}
+.sidebarContainer ul{
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebarContainer li{
+    cursor: pointer;
+    color: #3D3F3E;
+}
+.selected{
+    color:#ffffff;
+}
+.sidebarContainer a{
+    color: inherit;
+    text-decoration: none;
+}

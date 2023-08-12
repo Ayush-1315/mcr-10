@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.4rem;
+}
+.header select{
+    height: fit-content;
+    cursor: pointer;
+}
+.newBtn{
+    background-color: #037BFE;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.newBtn a{
+    text-decoration: none;
+    color: inherit;
+}
+table{
+    /* background-color: red; */
+    width: 99%;
+    margin: auto;
+    border:1px solid grey;
+}
+table tr:first-child{
+    border: 20px solid grey;
+    background-color: #F0F1F1;
+    margin: 0;
+    padding:0;
+}
+.imageContainer{
+    width: 5rem;
+}
+.tableImage{
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+}
