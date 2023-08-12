@@ -1,4 +1,4 @@
-import { Link,useNavigate } from "react-router-dom";
+import { Link,useNavigate,useLocation } from "react-router-dom";
 import { useData } from "../../context/dataContext";
 import css from "./sidebar.module.css";
 export const Sidebar=()=>{
@@ -8,6 +8,8 @@ export const Sidebar=()=>{
         navigate("/products");
         dataDispatch({type:"SET_DEPT",payload:"all"});
     }
+    const currPath=useLocation().pathname;
+    console.log(currPath);
     return <div className={css.sidebarContainer}>
         <ul>
             <li><Link to="/">Dashboard</Link></li>

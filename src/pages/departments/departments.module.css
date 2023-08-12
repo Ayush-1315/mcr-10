@@ -1,0 +1,13 @@
+.deptContainer{
+    display: flex;
+    gap:0.5rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.deptCards{
+    height: fit-content;
+    width: 15rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px solid grey
+}
