@@ -1,3 +1,21 @@
 .manager{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:0.5rem;
+    padding: 1rem;
+}
+.manager input,.manager textarea,.manager select{
+    width: 30vw;
+    border:none;
+    border-bottom: 1px solid grey;
+}
+.manager button{
+    width: fit-content;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    color: #ffffff;
+    background-color: #037BFE;
+    border:none;
+    border-radius: 4px;
 }

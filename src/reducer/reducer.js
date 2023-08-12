@@ -1,10 +1,10 @@
 import { inventoryData } from "../db/data";
 export const initialData = {
-  allProducts: [...inventoryData],
+  allProducts: JSON.parse(localStorage.getItem("inventory"))||[...inventoryData],
   category: "all",
   lowStock: false,
   sortBy: "",
-  filteredData: [...inventoryData],
+  filteredData: JSON.parse(localStorage.getItem("inventory"))||[...inventoryData],
 };
 export const dataReducer = (state, action) => {
   const { type, payload } = action;
@@ -54,6 +54,7 @@ export const dataReducer = (state, action) => {
         default:
           return { ...state };
       }
+      case "ADD_DATA":return{...state,allProducts:[...state?.allProducts,payload]}
     default:
       return state;
   }
