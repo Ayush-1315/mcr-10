@@ -5,7 +5,6 @@ export const ProductDetail=()=>{
     const {pId}=useParams();
     const {dataState:{allProducts}}=useData();
     const currentProduct=allProducts.find(({id})=>id===Number(pId));
-    console.log(currentProduct);
     return <div className={css.detailContainer}>
         <h2>{currentProduct?.name}</h2>
         <img src={currentProduct?.imageUrl} alt="product" className={css.displayImage}/>
